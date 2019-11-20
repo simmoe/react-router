@@ -17,13 +17,13 @@ const App = () => {
       <main>
       {/* A <Switch> looks through its children <Route>s and renders the first one that matches the current URL. */}
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/react-router/">
             <Home />
           </Route>
-          <Route path="/about">
+          <Route path="/react-router/about">
             <About />
           </Route>
-          <Route path="/profile">
+          <Route path="/react-router/profile">
             <Profile />
           </Route>
         </Switch>
@@ -40,13 +40,13 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <NavLink exact={true} activeClassName='is-active' to='/'>Home</NavLink>
+            <NavLink exact={true} activeClassName='is-active' to='/react-router/'>Home</NavLink>
           </li>
           <li>
-            <NavLink exact={true} activeClassName='is-active' to='/about'>About</NavLink>
+            <NavLink exact={true} activeClassName='is-active' to='/react-router/about'>About</NavLink>
           </li>
           <li>
-            <NavLink exact={true} activeClassName='is-active' to='/profile'>Profile</NavLink>
+            <NavLink exact={true} activeClassName='is-active' to='/react-router/profile'>Profile</NavLink>
           </li>
         </ul>
       </nav>
