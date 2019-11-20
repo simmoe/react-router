@@ -12,7 +12,7 @@ In order for this to work, you will need a newer installation of node.js. I wont
 When the scripts are done, you will have a fresh React app in the folder you ran the script. Open this folder in vs code - open up the terminal from here, and install the React Router library:
 
 
-````Javascript
+````javascript 
 npm install react-router-dom --save
 ````
 
@@ -82,7 +82,7 @@ Also notice the activeClassName property - at least we are given a little someth
 
 In the main App function, we now want to Route these menu items to the subcomponents. We do that by using the Switch module from Router, in this way:
 
-````Javacript 
+````javascript  
 const App = () => {
   return (
     <Router>
@@ -105,7 +105,7 @@ const App = () => {
     )
 }
 ````
-As you can see the whole App returns a <Router>. The Router includes the <Header> as well as a <Switch> with three <Route> components inside. The way this works, is that the Router will look for the first <Link> that matches it´s "path" and then return the component inside.
+As you can see the whole App returns a < Router >. The Router includes the < Header > as well as a < Switch > with three < Route > components inside. The way this works, is that the Router will look for the first <Link> that matches it´s "path" and then return the component inside.
 
 Try it out! 
  
