@@ -105,13 +105,10 @@ const App = () => {
     )
 }
 ````
-As you can see the whole App returns a < Router >. The Router includes the < Header > as well as a < Switch > with three < Route > components inside. The way this works, is that the Router will look for the first <Link> that matches it´s "path" and then return the component inside.
+As you can see the whole App returns a < Router >. The Router includes the < Header > as well as a < Switch > with three < Route > components inside. The way this works, is that the Router will look for the first < NavLink > that matches it´s "path" and then return the component inside.
 
 Try it out! 
  
-
-
-
 
 
 
