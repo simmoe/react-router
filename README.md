@@ -89,15 +89,16 @@ const App = () => {
       <Header />
       <main>
       {/* A <Switch> looks through its children <Route>s and renders the first one that matches the current URL. */}
+      {/* The exact property ensures that the empty link wont render always */}
         <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
           <Route path="/about">
             <About />
           </Route>
           <Route path="/profile">
             <Profile />
-          </Route>
-          <Route path="/">
-            <Home />
           </Route>
         </Switch>
         </main>      
